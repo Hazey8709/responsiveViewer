@@ -1,0 +1,130 @@
+/*T   --------------------  Index CSS  -------------------------  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/**    Body    */
+body {
+    /* display: block; */
+    /* position: fixed; */
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    background-image: url("../images/noobieJ-background.png");
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* height: 100vh; */
+    margin: 0.5rem;
+    padding: 0.2rem;
+}
+
+/**      URL List Container     */
+#urlListContainer {
+    border: 0.1rem solid black;
+    background-color: aliceblue;
+    height: 15rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.3rem;
+}
+
+#urlListContainer > h3 {
+    text-align: center;
+    padding: 0.15rem;
+}
+
+#urlList {
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid blue;
+    height: 10rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0.3rem;
+    list-style: none;
+    padding: 0.3rem;
+    overflow-x: auto;
+}
+
+/**    Clear URL List Btn    */
+#clearUrlList {
+    display: block;
+    border: 0.2rem outset darkred;
+    border-radius: 0.3rem;
+    color: red;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0.25rem;
+    font-weight: bold;
+}
+
+#clearUrlList:hover {
+    background-color: red;
+    color: white;
+}
+
+/*!  --------------     Main   ---------------- */
+/**  --------    Frames Container    --------  */
+#frames_Cont {
+    /* border: 0.1rem solid blue; */
+    /* width: 100%; */
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+#inner {
+    display: flex;
+    /* border: 0.1rem solid blue; */
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*s                          (All-frames) */
+.frame {
+    /* border: 0.1rem solid yellow; */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+iframe {
+    border: 0.1rem solid black;
+}
+
+/* span:first-of-type {
+    display: none;
+} */
+
+/**     Title of iFrame's  */
+h2 {
+    /* border: 0.1rem solid red; */
+    text-align: center;
+}
+
+span.small {
+    font-size: 50%;
+}
+
+/*! ------------ Notice On Bottom / Disclaimer  ------------ */
+.notice {
+    display: block;
+    border: 0.1rem solid black;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.437);
+    color: white;
+
+    text-align: center;
+}
+
+.notice b {
+    color: black;
+}
+
+.notice a {
+    text-decoration: none;
+}
