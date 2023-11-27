@@ -7,14 +7,12 @@
 
 /**    Body    */
 body {
-    /* display: block; */
-    /* position: fixed; */
-    border: 0.1rem solid black;
+    border: 0.1rem solid red;
     border-radius: 1rem;
     background-image: url("../images/noobieJ-background.png");
     background-position: center;
-    /* background-repeat: no-repeat; */
-    background-size: cover;
+    background-repeat: repeat;
+    /* background-size: cover; */
     /* height: 100vh; */
     margin: 0.5rem;
     padding: 0.2rem;
