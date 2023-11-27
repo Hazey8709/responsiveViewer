@@ -7,8 +7,10 @@ The project uses iFrames so some websites can not be viewed like google for exam
 
 # Notes:
 
-_WARNING: Do not use passwords or sensitive information as the SSL is not installed!_
-_Use as a guide or preview Only May not be pixel perfect!_
+_WARNING: Do not use passwords or sensitive information as the SSL is not installed!
+Use as a guide or preview Only May not be pixel perfect! I personaly don't collect data or cookies, 
+Hoest does collect normal data like IP, Computer info (every site at least collects this!). Project uses local storage 
+to save data (Persistent data) can be deleted in the developer console if needed or cleared by button._
 
 # Links:
 
@@ -18,5 +20,12 @@ _Use as a guide or preview Only May not be pixel perfect!_
 
 # To Use:
 
-_On the top of the webpage there is a search bar looking input. Put URL there in input and hit enter to view the responsiveness.
-The input for the URL excepts localhost & web URL's. Depending what your trying to view and the CORS set up some thing may be blocked._
+_At the top you will see a input section to enter URL of project OR localhost. There is also quick options to quickly move to sized iFrame you need to see. There is also a URL box that saves all URL's entered and you can quick on them to view them again easily.**There is an option to use http:// or https:// quick the one needed so you don't have to write it then type URL address and submit**_
+
+
+# Branch 
+[main](https://github.com/Hazey8709/responsiveViewer) <br />
+**Main:** _Main is newest working branch/final project_ <br />
+
+[Pages](https://github.com/Hazey8709/responsiveViewer/tree/Pages) <br />
+**Pages:** _Pages is the last updated version that was pushed to main (further changes/ features will be under a new branch)_ <br />
