@@ -1,108 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
+            author="NoobieJ"
             name="description"
             content="Responsive Design testing For the web"
         />
-        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <link rel="stylesheet" type="text/css" href="./css/nav.css" />
+        <link rel="stylesheet" type="text/css" href="./css/form.css" />
+        <link rel="stylesheet" type="text/css" href="./css/index.css" />
 
         <title>Responsive Design Testing</title>
     </head>
+    <body>
+        <nav class="nav_Cont">
+            <ul>
+                <li><a href="#frame_1">350</a></li>
+                <li><a href="#frame_2">400</a></li>
+                <li><a href="#frame_3">480</a></li>
+                <li><a href="#frame_4">810</a></li>
+                <li><a href="#frame_5">1080</a></li>
+            </ul>
+        </nav>
 
-    <body id="container">
-        <div id="url">
-            <form method="post">
+        <div id="main_Cont">
+            <!--!     ---    Form    ---         -->
+            <form method="post" id="form_Cont">
                 <input
                     type="text"
                     placeholder="Test your Project's Responsiveness!"
+                    required
                 />
-                <input type="submit" value="submit" />
-                <div id="options">
-                    <label for="normal"
+
+                <button type="submit" value="clear" id="submitButton">
+                    Submit
+                </button>
+                <button type="submit" value="clear" id="clearButton">
+                    Clear
+                </button>
+
+                <div id="prefixOptions">
+                    <label for="http"
                         ><input
-                            id="normal"
+                            id="http"
                             type="radio"
                             name="option"
                             value="1"
                             checked
-                        />Width only</label
+                        />http://</label
                     >
 
-                    <label for="accurate"
+                    <label for="https"
                         ><input
-                            id="accurate"
+                            id="https"
                             type="radio"
                             name="option"
                             value="2"
-                        />Device sizes</label
+                        />https://</label
+                    >
+                </div>
+
+                <div id="pxOptions">
+                    <label for="pxWidth"
+                        ><input
+                            id="pxWidth"
+                            type="radio"
+                            name="pixel"
+                            value="1"
+                        />Width</label
+                    >
+
+                    <label for="pxHeight"
+                        ><input
+                            id="pxHeight"
+                            type="radio"
+                            name="pixel"
+                            value="2"
+                        />Width/Height</label
                     >
                 </div>
             </form>
-        </div>
-        <div id="frames" class="widthOnly">
-            <div id="inner">
-                <div id="f1" class="frame">
-                    <h2>
-                        350<span> x 600px</span>
-                        <span class="small">(small phone)</span>
-                    </h2>
-                    <iframe seamless width="360" height="615"></iframe>
+
+            <!--!  URL List Container   -->
+            <div id="urlListContainer">
+                <h3>URL List</h3>
+                <ul id="urlList"></ul>
+                <button id="clearUrlList">Clear List</button>
+            </div>
+
+            <!--!    Frames   (350 X 600, 400 X 750)n  -->
+            <div id="frames_Cont">
+                <div id="inner">
+                    <!--* iFrame 1 -->
+                    <div id="frame_1" class="frame">
+                        <h2>
+                            350<span class="normal"> x 600px</span>
+                            <span class="small">(Small Phone)</span>
+                        </h2>
+                        <iframe
+                            id="iframe"
+                            seamless
+                            width="365"
+                            height="615"
+                        ></iframe>
+                    </div>
+
+                    <!--* iFrame 2 -->
+                    <div id="frame_2" class="frame">
+                        <h2>
+                            400<span> x 750px</span>
+                            <span class="small">(iPhone)</span>
+                        </h2>
+                        <iframe
+                            id="iframe"
+                            seamless
+                            width="415"
+                            height="765"
+                        ></iframe>
+                    </div>
+                    <!--* iFrame 3 -->
+                    <div id="frame_3" class="frame">
+                        <h2>
+                            480<span> x 800</span>
+                            <span class="small">(Small Tablet)</span>
+                        </h2>
+                        <iframe seamless width="495" height="800"></iframe>
+                    </div>
+
+                    <!--* iFrame 4 -->
+                    <div id="frame_4" class="frame">
+                        <h2>
+                            810<span> x 1080</span>
+                            <span class="small">(iPad - Portrait)</span>
+                        </h2>
+                        <iframe seamless width="825" height="1095"></iframe>
+                    </div>
+
+                    <!--* iFrame 5 -->
+                    <div id="frame_5" class="frame">
+                        <h2>
+                            1080<span> x 810</span>
+                            <span class="small">(iPad - Landscape)</span>
+                        </h2>
+                        <iframe seamless width="1095" height="825"></iframe>
+                    </div>
                 </div>
-                <div id="f2" class="frame">
-                    <h2>
-                        400<span> x 750px</span>
-                        <span class="small">(iPhone)</span>
-                    </h2>
-                    <iframe seamless width="415" height="765"></iframe>
-                </div>
-                <div id="f3" class="frame">
-                    <h2>
-                        480<span> x 800</span>
-                        <span class="small">(small tablet)</span>
-                    </h2>
-                    <iframe seamless width="495" height="800"></iframe>
-                </div>
-                <div id="f4" class="frame">
-                    <h2>
-                        810<span> x 1080</span>
-                        <span class="small">(iPad - Portrait)</span>
-                    </h2>
-                    <iframe seamless width="825" height="1095"></iframe>
-                </div>
-                <div id="f5" class="frame">
-                    <h2>
-                        1080<span> x 810</span>
-                        <span class="small">(iPad - Landscape)</span>
-                    </h2>
-                    <iframe seamless width="1095" height="825"></iframe>
-                </div>
+            </div>
+
+            <!--! ----------  Notice   ----------- -->
+            <div class="notice">
+                <p>
+                    <b>Made by:</b>
+                    <a href="https://noobiej.tech" target="_blank">Noobie J</a>
+                    -
+                    <a
+                        href="https://github.com/Hazey8709/responsiveViewer"
+                        target="_blank"
+                        >GitHub</a
+                    >
+                    -
+                    <a href="mailto:questions@noobiej.tech"
+                        >jfortin802@gmail.com</a
+                    >
+                </p>
+
+                <p>
+                    <b>Note:</b> The content may not be pixel perfect! Use as a
+                    guide only to get an idea how it will look. Data is stored
+                    in local storage (On your browser), I don't have access to
+                    it! No cookies collected! Not fully responsive.
+                </p>
+                <p>
+                    <b>Directions:</b> Before submitting form, check if you want
+                    http:// or https://. The box below it you can select to
+                    display Width OR Width & Height
+                </p>
+                <p>
+                    <b>Quick Access:</b>
+                    The top navigation will bring you to the exact pixel width.
+                </p>
+                <p>
+                    <b>URL List Box:</b>
+                    All URL's are saved in the URL List & can be clicked on to
+                    access again.
+                </p>
             </div>
         </div>
 
-        <div class="notice">
-            <p>
-                Made by:
-                <a href="https://noobiej.tech" target="_blank">Noobie J</a> -
-                <a
-                    href="https://github.com/Hazey8709/responsiveViewer"
-                    target="_blank"
-                    >Check it out on GitHub</a
-                >
-                <a href="mailto:questions@noobiej.tech"
-                    >questions@noobiej.tech</a
-                >
-            </p>
-
-            <p>
-                Note: The content may not be pixel perfect! Use as a guide only
-                to get an idea how it will look.
-            </p>
-        </div>
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-        <script src="responsive.js"></script>
+        <script src="iFrames.js"></script>
     </body>
 </html>

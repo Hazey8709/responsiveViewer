@@ -1,0 +1,58 @@
+/*T   --------------------  Navigation CSS  -------------------------  */
+
+/* ! Reusable CSS
+#active {
+    background-image: radial-gradient(black, black, black);
+    background-color: black;
+} */
+
+/** ----------- Nav Container ----------- */
+.nav_Cont {
+    display: flex;
+    border: 0.1rem solid black;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: #0005;
+
+    height: 5rem;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.nav_Cont ul {
+    display: flex;
+    /* border: 0.1rem solid black; */
+    border-radius: 0.3rem;
+    background-color: white;
+    justify-content: space-around;
+    list-style: none;
+    width: 70%;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    box-shadow: 0 0 10px black;
+}
+
+.nav_Cont ul li {
+    /* display: flex; */
+    /* border: 0.01rem solid red; */
+    border-radius: 0.3rem;
+    background-image: radial-gradient(black, black, white);
+
+    align-self: center;
+    padding: 0.5rem;
+    box-shadow: 0 0 10px black;
+}
+
+/*s    Nav Hover   */
+.nav_Cont ul li:hover {
+    /* background-color: black; */
+    background-image: radial-gradient(black, black, black);
+}
+
+.nav_Cont ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem;
+}

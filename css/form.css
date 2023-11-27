@@ -1,0 +1,125 @@
+/*T   --------------------  Form CSS -------------------------  */
+
+/**    Container Around Form  */
+#form_Cont {
+    display: flex;
+    flex-direction: column;
+    /* border: 0.1rem solid greenyellow; */
+    justify-content: center;
+    /* margin: 0 auto; */
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem;
+
+    /* margin: 0 0 20px 0px; */
+}
+
+/**       Input for Site Address  */
+#form_Cont input {
+    /* display: inline-block; */
+    border: 3px solid #666;
+    border-radius: 1.5rem;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+#form_Cont label {
+    margin: 0 auto;
+    /* margin-right: 2.5rem; */
+}
+
+/**      Clear Btn     */
+#clearButton {
+    display: flex;
+    border: 0.2rem outset black;
+    border-radius: 0.4rem;
+    background-color: rgba(0, 0, 0, 0.226);
+    color: red;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 0 0 3px white;
+    padding: 0.3rem;
+}
+
+#clearButton:hover {
+    background-color: red;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+#clearButton:active {
+    border: 0.2rem outset red;
+    background-color: rgba(255, 0, 0, 0.37);
+    color: red;
+    text-decoration: underline;
+    text-shadow: 0 0 3px white;
+}
+
+/**      Submit Btn     */
+#submitButton {
+    display: flex;
+    border: 0.2rem outset black;
+    border-radius: 0.4rem;
+    background-color: rgba(0, 128, 0, 0.378);
+    color: darkgreen;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 0 0 5px white;
+    padding: 0.3rem;
+}
+
+#submitButton:hover {
+    background-color: rgba(1, 78, 1, 0.527);
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+#submitButton:active {
+    background-color: rgba(1, 78, 1, 0.767);
+    color: white;
+    text-decoration: underline;
+}
+/**      Options Container      */
+#options_Cont {
+    /*  */
+}
+
+/**      Options  (Prefix & Pixel, Options) */
+#prefixOptions {
+    display: flex;
+    border: 0.2rem solid black;
+    border-radius: 0.3rem;
+    background-color: #0005;
+    color: white;
+    height: 2rem;
+    width: 30rem;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+#pxOptions {
+    display: flex;
+    border: 0.2rem solid black;
+    border-radius: 0.3rem;
+    background-color: #0005;
+    color: white;
+    height: 2rem;
+    width: 30rem;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
